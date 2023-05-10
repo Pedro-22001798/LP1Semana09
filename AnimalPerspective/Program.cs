@@ -20,11 +20,11 @@ namespace AnimalPerspective
         {
             if(newAnimal is ICanFly)
             {
-                Console.WriteLine($"{newAnimal.GetType()} Number of wings = {((ICanFly)newAnimal).NumberOfWings}");
+                Console.WriteLine($"{newAnimal.GetType().Name} Number of wings = {((ICanFly)newAnimal).NumberOfWings}");
             }
             if(newAnimal is IMammal)
             {
-                Console.WriteLine($"{newAnimal.GetType()} Number of nipples = {((IMammal)newAnimal).NumberOfNipples}");
+                Console.WriteLine($"{newAnimal.GetType().Name} Number of nipples = {((IMammal)newAnimal).NumberOfNipples}");
             }
         }
     }
