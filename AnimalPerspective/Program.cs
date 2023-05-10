@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+namespace AnimalPerspective
+{
+    public class Program
+    {
+        private static void Main()
+        {
+            Animal animal1 = new Dog();
+        }
+    }
+}
