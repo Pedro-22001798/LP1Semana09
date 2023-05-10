@@ -2,8 +2,8 @@ using System;
 
 namespace AnimalPerspective
 {
-    public class ICanFly
+    public interface ICanFly
     {
-        
+        public int NumberOfWings {get;}
     }
 }

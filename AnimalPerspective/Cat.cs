@@ -4,11 +4,15 @@ namespace AnimalPerspective
 {
     public class Cat : Animal, IMammal
     {
-        public readonly int numberOfNipples = 10;
-        public int NumberOfNipples {get {return numberOfNipples;}}
+        public int NumberOfNipples {get; }
         public override string Sound()
         {
             return base.Sound() + "Miau";
+        }
+
+        public Cat()
+        {
+            NumberOfNipples = 10;
         }
     }
 }
