@@ -4,17 +4,11 @@ namespace AnimalPerspective
 {
     public class Bat : Animal, IMammal, ICanFly
     {
-        public int NumberOfNipples {get; }
-        public int NumberOfWings {get; }
+        public int NumberOfNipples {get {return 4;}}
+        public int NumberOfWings {get {return 2;} }
         public override string Sound()
         {
             return base.Sound() + "ihihii";
-        }
-
-        public Bat()
-        {
-            NumberOfNipples = 4;
-            NumberOfWings = 2;
         }
     }
 }

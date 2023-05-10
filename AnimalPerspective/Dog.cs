@@ -4,15 +4,10 @@ namespace AnimalPerspective
 {
     public class Dog : Animal, IMammal
     {
-        public int NumberOfNipples {get; }
+        public int NumberOfNipples {get {return 8;} }
         public override string Sound()
         {
             return base.Sound() + "Woof!";
-        }
-
-        public Dog()
-        {
-            NumberOfNipples = 8;
         }
     }
 }
