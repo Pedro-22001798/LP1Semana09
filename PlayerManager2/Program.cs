@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
+namespace PlayerManager2 // >>> Change to PlayerManager2 for exercise 4 <<< //
 {
     /// <summary>
     /// The player listing program.
@@ -159,14 +159,12 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
         /// </returns>
         private IEnumerable<Player> GetPlayersWithScoreGreaterThan(int minScore)
         {
-            ICollection<Player> pList = new List<Player>();
             foreach(Player p in playerList)
             {
                 if(p.Score > minScore)
-                    pList.Add(p);
+                    yield return p;
             }
 
-            return pList;
         }
     }
 }
