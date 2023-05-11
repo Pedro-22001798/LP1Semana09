@@ -74,7 +74,14 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
 
                 // Wait for user to press a key...
                 Console.Write("\nPress any key to continue...");
-                Console.ReadKey(true);
+                try
+                {
+                    Console.ReadKey(true);
+                }
+                catch (InvalidOperationException)
+                {
+                    
+                }
                 Console.WriteLine("\n");
 
                 // Loop keeps going until players choses to quit (option 4)
